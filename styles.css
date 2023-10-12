@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    background-color: #ffffff;
+    padding-top: 60px;
+}
+
+.header {
+    background-color: #151515;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    min-height: 60px;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 30px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+}
+
+.nav {
+    transition: all 0.3s ease-in-out;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 40px;
+}
+
+.nav__link {
+    color: #76c7c7;
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    transition: all 0.3s;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    color: #9ef1f1;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    height: 2px;
+    width: 35px;
+    background: #ffffff;
+    margin: 5px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav--open {
+    transform: translate(0) !important;
+}
+
+.hamburger--open .bar:nth-child(1) {
+    transform: translateY(14px) rotate(45deg);
+}
+
+.hamburger--open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger--open .bar:nth-child(3) {
+    opacity: 0;
+}
+
+.hamburger--open .bar:nth-child(4) {
+    opacity: 0;
+}
+
+.hamburger--open .bar:nth-child(5) {
+    transform: translateY(-14px) rotate(-45deg);
+}
+
+section {
+    scroll-margin-top: 58px;
+}
+
+.flexbox-container {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("iso-syöte.jpg");
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.flexbox-item1 {
+    max-width: 400px;
+    margin: 10px 0px;
+}
+
+.flexbox-item2 {
+    min-height: 100px;
+    width: 360px;
+    background-color: #00000049;
+    margin: 15px 0px;
+    color: #ffffff;
+    font-size: 28px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.flexbox-item2 h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+img {
+  max-width: 80%;
+  max-height: 80%;
+  box-shadow: 0px 0px 30px #222222;
+  border-radius: 10px;
+}
+
+.box {
+    padding: 20px 20px 40px 20px;
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.box2 {
+    padding: 20px 20px 40px 20px;
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.kukaminaolen {
+    background-color: #2D2D2D;
+    padding: 70px 30px 100px 30px;
+    text-align: center;
+    margin: auto;
+    max-width: 75%;
+}
+
+.kukaminaolen h1 {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+    color: #ff8533;
+}
+
+.kukaminaolen h2 {
+    font-size: 24px;
+    font-weight: 400;
+    padding: 20px 0px 10px 0px;
+}
+
+.kukaminaolen p {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.full-bleed {
+    box-shadow: 0 0 0 100vmax #2D2D2D;
+    clip-path: inset(0 -100vmax);
+}
+
+.koulutus {
+    background-color: #ececec;
+    padding: 70px 30px 100px 30px;
+    max-width: 55%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.full-bleed2 {
+    box-shadow: 0 0 0 100vmax #ececec;
+    clip-path: inset(0 -100vmax);
+}
+
+.koulutus h1 {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.koulutus h2 {
+    font-size: 24px;
+    font-weight: 400;
+    padding: 30px 0px 10px 0px;
+}
+
+.tyokokemus {
+    background-color: #2D2D2D;
+    padding: 70px 30px 100px 30px;
+    max-width: 45%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.tyokokemus h1 {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+    color: #ff8533;
+}
+
+.tyokokemus h2 {
+    font-size: 24px;
+    font-weight: 400;
+    padding: 30px 0px 10px 0px;
+}
+
+.tyokokemus h3 {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.main {
+    background-color: #f1f1f1;
+    padding: 20px;
+    float: left;
+    width: 60%;
+}
+
+.yhteystiedot {
+    background-color: #76c7c7;
+    padding: 30px;
+    text-align: center;
+}
+
+.yhteystiedot h1 {
+    font-size: 28px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.email {
+    color: #000000;
+    font-size: 18px;
+    transition: color 0.2s;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.email:hover {
+    color: #000000;
+    text-shadow: 0 0 5px #38383836;
+}
+
+
+.social-icon {
+    color: #000000;
+    font-size: 34px;
+    transition: color 0.2s;
+    text-decoration: none;
+    margin: 20px 20px;
+}
+
+.social-icon:hover {
+    color: #383838;
+}
+
+@media (max-width: 1024px) {
+    .nav {
+        position: fixed;
+        top: 60px;
+        right: 0;
+        background-color: #151515;
+        width: 30%;
+        padding: 10px 0 25px;
+        transform: translateX(350%);
+    }
+
+    .nav__list {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .nav__link {
+        font-size: 16px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .kukaminaolen {
+        max-width: 100%;
+        padding: 70px 10px 100px 10px;
+    }
+
+    .koulutus {
+        max-width: 90%;
+    }
+
+    .tyokokemus {
+        max-width: 90%;
+    }
+
+    .flexbox-item1 {
+        max-width: 300px;
+    }
+
+    .flexbox-item2 {
+        width: 320px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .flexbox-item2 h1 {
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .box {
+        width: 100%;
+        align-items: center;
+    }
+
+    .kukaminaolen {
+        max-width: 100%;
+    }
+
+    .koulutus {
+        max-width: 100%;
+    }
+
+    .tyokokemus {
+        max-width: 100%;
+    }
+
+    .email {
+        font-size: 14px;
+    }
+
+    .flexbox-item1 {
+        max-width: 320px;
+        padding-left: 50px;
+    }
+
+    .flexbox-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
