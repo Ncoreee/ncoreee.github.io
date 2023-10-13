@@ -157,6 +157,7 @@ img {
     font-size: 24px;
     font-weight: 400;
     padding: 20px 0px 10px 0px;
+    color: #FFFFFF;
 }
 
 .kukaminaolen p {
@@ -164,6 +165,7 @@ img {
     padding-right: 10px;
     font-size: 16px;
     text-align: center;
+    color: #FFFFFF;
 }
 
 .koulutus {
@@ -207,11 +209,17 @@ img {
     font-size: 24px;
     font-weight: 400;
     padding: 30px 0px 10px 0px;
+    color: #ff934c;
 }
 
 .tyokokemus h3 {
     font-size: 17px;
     font-weight: 300;
+    color: #ffffff;
+}
+
+.tyokokemus p {
+    color: #ffffff;
 }
 
 .yhteystiedot {
@@ -355,6 +363,7 @@ footer {
     .tyokokemus {
         max-width: 90%;
     }
+
 
     .email {
         font-size: 18px;
