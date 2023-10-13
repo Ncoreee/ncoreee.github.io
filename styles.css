@@ -37,7 +37,7 @@ body {
 
 .logo {
     color: #ffffff;
-    font-size: 30px;
+    font-size: 24px;
     letter-spacing: -0.5px;
     font-weight: 400;
 }
@@ -52,10 +52,10 @@ body {
 }
 
 .nav__link {
-    color: #76c7c7;
-    font-size: 20px;
     letter-spacing: -0.5px;
     transition: all 0.3s;
+    font-size: 16px;
+    color: #76c7c7;
 }
 
 .nav__link:hover,
@@ -63,96 +63,72 @@ body {
     color: #9ef1f1;
 }
 
-.hamburger {
-    display: none;
-    cursor: pointer;
-}
-
-.bar {
-    height: 2px;
-    width: 35px;
-    background: #ffffff;
-    margin: 5px 0;
-    transition: all 0.3s ease-in-out;
-}
-
-.nav--open {
-    transform: translate(0) !important;
-}
-
-.hamburger--open .bar:nth-child(1) {
-    transform: translateY(14px) rotate(45deg);
-}
-
-.hamburger--open .bar:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger--open .bar:nth-child(3) {
-    opacity: 0;
-}
-
-.hamburger--open .bar:nth-child(4) {
-    opacity: 0;
-}
-
-.hamburger--open .bar:nth-child(5) {
-    transform: translateY(-14px) rotate(-45deg);
-}
-
 section {
     scroll-margin-top: 58px;
 }
 
+.full-bleed {
+    box-shadow: 0 0 0 100vmax #2D2D2D;
+    clip-path: inset(0 -100vmax);
+}
+
+.full-bleed2 {
+    box-shadow: 0 0 0 100vmax #ececec;
+    clip-path: inset(0 -100vmax);
+}
+
+.main {
+    background-color: #f1f1f1;
+    padding: 20px;
+    float: left;
+    width: 60%;
+}
+
 .flexbox-container {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("iso-syöte.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("iso-syöte.jpg");
     background-position: top;
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    flex-direction: column;
 }
 
 .flexbox-item1 {
-    max-width: 400px;
-    margin: 10px 0px;
+    max-width: 320px;
+    padding-left: 50px;
 }
 
 .flexbox-item2 {
-    min-height: 100px;
-    width: 360px;
     background-color: #00000049;
-    margin: 15px 0px;
     color: #ffffff;
-    font-size: 28px;
+    width: 320px;
+    font-size: 24px;
+    text-align: center;
+    margin: 15px 0px;
     padding: 10px;
     border-radius: 5px;
-}
-
-.flexbox-item2 h1 {
-    font-size: 40px;
-    font-weight: 400;
+    min-height: 100px;
 }
 
 img {
-  max-width: 80%;
-  max-height: 80%;
-  box-shadow: 0px 0px 30px #222222;
-  border-radius: 10px;
+    max-width: 80%;
+    max-height: 80%;
+    box-shadow: 0px 0px 30px #222222;
+    border-radius: 10px;
+}
+
+.flexbox-item2 h1 {
+    font-size: 30px;
+    font-weight: 400;
 }
 
 .box {
     padding: 20px 20px 40px 20px;
+    width: 100%;
     float: left;
-    width: 50%;
-    text-align: center;
-}
-
-.box2 {
-    padding: 20px 20px 40px 20px;
-    float: left;
-    width: 50%;
+    align-items: center;
     text-align: center;
 }
 
@@ -160,14 +136,14 @@ img {
     content: "";
     display: table;
     clear: both;
-  }
+}
 
 .kukaminaolen {
     background-color: #2D2D2D;
-    padding: 70px 30px 100px 30px;
+    max-width: 100%;
+    padding: 70px 10px 100px 10px;
     text-align: center;
     margin: auto;
-    max-width: 75%;
 }
 
 .kukaminaolen h1 {
@@ -190,23 +166,13 @@ img {
     text-align: center;
 }
 
-.full-bleed {
-    box-shadow: 0 0 0 100vmax #2D2D2D;
-    clip-path: inset(0 -100vmax);
-}
-
 .koulutus {
     background-color: #ececec;
     padding: 70px 30px 100px 30px;
-    max-width: 55%;
+    max-width: 100%;
     margin: auto;
     text-align: center;
     align-items: center;
-}
-
-.full-bleed2 {
-    box-shadow: 0 0 0 100vmax #ececec;
-    clip-path: inset(0 -100vmax);
 }
 
 .koulutus h1 {
@@ -223,8 +189,8 @@ img {
 
 .tyokokemus {
     background-color: #2D2D2D;
+    max-width: 100%;
     padding: 70px 30px 100px 30px;
-    max-width: 45%;
     margin: auto;
     text-align: center;
     align-items: center;
@@ -248,13 +214,6 @@ img {
     font-weight: 300;
 }
 
-.main {
-    background-color: #f1f1f1;
-    padding: 20px;
-    float: left;
-    width: 60%;
-}
-
 .yhteystiedot {
     background-color: #76c7c7;
     padding: 30px;
@@ -269,17 +228,16 @@ img {
 
 .email {
     color: #000000;
-    font-size: 18px;
     transition: color 0.2s;
     font-weight: 500;
     padding: 5px;
+    font-size: 14px;
 }
 
 .email:hover {
     color: #000000;
     text-shadow: 0 0 5px #38383836;
 }
-
 
 .social-icon {
     color: #000000;
@@ -293,6 +251,12 @@ img {
     color: #383838;
 }
 
+footer {
+    background-color: #76c7c7;
+    text-align: center;
+}
+
+/*Hampparivalikolle mobiili-layout*/
 @media (max-width: 1024px) {
     .nav {
         position: fixed;
@@ -318,40 +282,66 @@ img {
         display: block;
     }
 
-    .kukaminaolen {
-        max-width: 100%;
-        padding: 70px 10px 100px 10px;
+    .bar {
+        height: 2px;
+        width: 35px;
+        background: #ffffff;
+        margin: 5px 0;
+        transition: all 0.3s ease-in-out;
     }
 
-    .koulutus {
-        max-width: 90%;
+    .nav--open {
+        transform: translate(0) !important;
     }
 
-    .tyokokemus {
-        max-width: 90%;
+    .hamburger--open .bar:nth-child(1) {
+        transform: translateY(14px) rotate(45deg);
+    }
+
+    .hamburger--open .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger--open .bar:nth-child(3) {
+        opacity: 0;
+    }
+
+    .hamburger--open .bar:nth-child(4) {
+        opacity: 0;
+    }
+
+    .hamburger--open .bar:nth-child(5) {
+        transform: translateY(-14px) rotate(-45deg);
+    }
+
+}
+/*Tablet layout*/
+@media (min-width: 650px) {
+
+    .flexbox-container {
+        align-items: flex-end;
+        flex-direction: row;
     }
 
     .flexbox-item1 {
         max-width: 300px;
+        margin: 10px 0px;
+        padding-left: 0px;
     }
 
-    .flexbox-item2 {
-        width: 320px;
-        font-size: 24px;
-        text-align: center;
+    .row {
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    .flexbox-item2 h1 {
-        font-size: 30px;
-        font-weight: 400;
-    }
-
-}
-
-@media (max-width: 650px) {
     .box {
-        width: 100%;
-        align-items: center;
+        float: left;
+        width: 50%;
+    }
+
+    .box2 {
+        float: left;
+        width: 50%;
     }
 
     .kukaminaolen {
@@ -359,25 +349,71 @@ img {
     }
 
     .koulutus {
-        max-width: 100%;
+        max-width: 90%;
     }
 
     .tyokokemus {
-        max-width: 100%;
+        max-width: 90%;
     }
 
     .email {
-        font-size: 14px;
+        font-size: 18px;
+    }
+
+}
+
+/*Desktop layout*/
+@media (min-width: 1025px) {
+
+    .nav__list {
+        display: flex;
+        column-gap: 40px;
+    }
+
+    .nav__link {
+        font-size: 20px;
+    }
+
+    .hamburger {
+        display: none;
+        cursor: pointer;
+    }
+
+    .logo {
+        font-size: 30px;
     }
 
     .flexbox-item1 {
-        max-width: 320px;
-        padding-left: 50px;
+        max-width: 400px;
     }
 
-    .flexbox-container {
-        flex-direction: column;
-        align-items: center;
+    .flexbox-item2 {
+        width: 360px;
+        font-size: 28px;
+    }
+
+    .flexbox-item2 h1 {
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    .kukaminaolen {
+        padding: 70px 30px 100px 30px;
+        max-width: 75%;
+    }
+
+    .tyokokemus {
+        max-width: 45%;
+    }
+
+    .koulutus {
+        max-width: 55%;
+    }
+
+    .box {
+        float: left;
+        width: 50%;
+        align-content: space-between;
     }
 
 }
